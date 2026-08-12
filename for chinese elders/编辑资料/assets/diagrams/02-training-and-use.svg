@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="720" viewBox="0 0 1200 720" role="img" aria-labelledby="title desc">
+  <title id="title">模型训练与用户实际使用的两阶段示意图</title>
+  <desc id="desc">训练阶段用数据和反馈调整模型参数；使用阶段把用户输入交给训练后的模型计算输出。</desc>
+  <defs><marker id="a" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto"><path d="M0 0L12 6L0 12Z" fill="#176f66"/></marker><style>.t{font-family:'PingFang SC','Microsoft YaHei',sans-serif;font-size:34px;font-weight:700;fill:#172522}.h{font-family:'PingFang SC','Microsoft YaHei',sans-serif;font-size:26px;font-weight:700;fill:#172522}.p{font-family:'PingFang SC','Microsoft YaHei',sans-serif;font-size:19px;fill:#465955}.box{fill:#fffdf8;stroke:#176f66;stroke-width:3}.train{fill:#e2f0ec;stroke:#176f66;stroke-width:3}.use{fill:#fff0d8;stroke:#bb7921;stroke-width:3}.line{stroke:#176f66;stroke-width:4;fill:none;marker-end:url(#a)}</style></defs>
+  <rect width="1200" height="720" rx="28" fill="#faf6ed"/><text x="55" y="62" class="t">“训练模型”和“使用模型”不是同一时刻</text>
+  <rect x="55" y="115" width="1090" height="230" rx="24" class="train"/><text x="90" y="160" class="h">阶段一：训练（通常由模型公司提前完成）</text>
+  <rect x="100" y="205" width="210" height="90" rx="15" class="box"/><text x="205" y="242" text-anchor="middle" class="h">训练数据</text><text x="205" y="272" text-anchor="middle" class="p">文字、图片、反馈</text><path d="M310 250H410" class="line"/>
+  <rect x="420" y="195" width="260" height="110" rx="15" class="box"/><text x="550" y="238" text-anchor="middle" class="h">大量计算与调整</text><text x="550" y="272" text-anchor="middle" class="p">反复降低训练错误</text><path d="M680 250H780" class="line"/>
+  <rect x="790" y="205" width="290" height="90" rx="15" class="box"/><text x="935" y="242" text-anchor="middle" class="h">形成模型参数</text><text x="935" y="272" text-anchor="middle" class="p">学到的数学关系</text>
+  <rect x="55" y="385" width="1090" height="250" rx="24" class="use"/><text x="90" y="430" class="h">阶段二：实际使用，也叫推理（用户每次提问都会发生）</text>
+  <rect x="100" y="490" width="210" height="90" rx="15" class="box"/><text x="205" y="527" text-anchor="middle" class="h">您的输入</text><text x="205" y="557" text-anchor="middle" class="p">问题、图片或文件</text><path d="M310 535H410" class="line"/>
+  <rect x="420" y="480" width="260" height="110" rx="15" class="box"/><text x="550" y="523" text-anchor="middle" class="h">训练后的模型</text><text x="550" y="557" text-anchor="middle" class="p">根据当前上下文计算</text><path d="M680 535H780" class="line"/>
+  <rect x="790" y="490" width="290" height="90" rx="15" class="box"/><text x="935" y="527" text-anchor="middle" class="h">这一次的输出</text><text x="935" y="557" text-anchor="middle" class="p">文字、图片或动作建议</text>
+  <text x="600" y="682" text-anchor="middle" class="p">一次普通聊天通常不会自动重新训练整个基础模型；产品可能另行保存对话或记忆</text>
+</svg>

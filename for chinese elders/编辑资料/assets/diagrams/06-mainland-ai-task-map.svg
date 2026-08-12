@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="760" height="520" viewBox="0 0 760 520">
+  <rect width="760" height="520" rx="30" fill="#fbf7ef"/>
+  <text x="380" y="58" text-anchor="middle" font-family="PingFang SC, sans-serif" font-size="34" font-weight="700" fill="#172522">先选任务，再选官方入口</text>
+  <g font-family="PingFang SC, sans-serif" font-size="25" text-anchor="middle">
+    <rect x="265" y="88" width="230" height="76" rx="22" fill="#087f73"/><text x="380" y="135" fill="white">我的真实任务</text>
+    <path d="M380 164V205M380 205H110V235M380 205H650V235M380 205V235" fill="none" stroke="#087f73" stroke-width="6"/>
+    <rect x="28" y="235" width="164" height="86" rx="18" fill="#dcefeb"/><text x="110" y="275" fill="#172522">日常语音</text><text x="110" y="306" font-size="20" fill="#5f706b">对话、解释</text>
+    <rect x="216" y="235" width="164" height="86" rx="18" fill="#dcefeb"/><text x="298" y="275" fill="#172522">文件研究</text><text x="298" y="306" font-size="20" fill="#5f706b">长文、来源</text>
+    <rect x="404" y="235" width="164" height="86" rx="18" fill="#dcefeb"/><text x="486" y="275" fill="#172522">视觉创作</text><text x="486" y="306" font-size="20" fill="#5f706b">作图、修图</text>
+    <rect x="592" y="235" width="140" height="86" rx="18" fill="#dcefeb"/><text x="662" y="275" fill="#172522">第二意见</text><text x="662" y="306" font-size="20" fill="#5f706b">交叉核验</text>
+    <path d="M110 321V363M298 321V363M486 321V363M662 321V363" stroke="#bd7c23" stroke-width="5"/>
+    <rect x="48" y="363" width="664" height="112" rx="22" fill="#fff0d4"/>
+    <text x="380" y="406" fill="#172522">官网或官方应用商店</text>
+    <text x="380" y="444" font-size="21" fill="#5f706b">核对提供者、账号、付款、隐私和当前版本</text>
+  </g>
+</svg>

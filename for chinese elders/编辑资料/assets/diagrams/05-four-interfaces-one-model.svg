@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="760" viewBox="0 0 1200 760" role="img" aria-labelledby="title desc">
+  <title id="title">同一个大语言模型可以通过多种界面使用</title>
+  <desc id="desc">官方网页、手机应用、第三方包装应用、终端命令行和程序接口都可能连接本地模型或云端模型。</desc>
+  <defs>
+    <marker id="arrow" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto"><path d="M0 0L12 6L0 12Z" fill="#176f66"/></marker>
+    <style>
+      .title{font-family:'PingFang SC','Microsoft YaHei',sans-serif;font-size:34px;font-weight:700;fill:#172522}.sub{font-family:'PingFang SC','Microsoft YaHei',sans-serif;font-size:20px;fill:#566763}.head{font-family:'PingFang SC','Microsoft YaHei',sans-serif;font-size:25px;font-weight:700;fill:#172522}.small{font-family:'PingFang SC','Microsoft YaHei',sans-serif;font-size:18px;fill:#42534f}.box{fill:#fffdf8;stroke:#176f66;stroke-width:3}.soft{fill:#e1f0ec;stroke:#176f66;stroke-width:3}.warn{fill:#fff0d8;stroke:#bb7921;stroke-width:3}.line{stroke:#176f66;stroke-width:4;fill:none;marker-end:url(#arrow)}
+    </style>
+  </defs>
+  <rect width="1200" height="760" rx="28" fill="#faf6ed"/>
+  <text x="55" y="65" class="title">同一个模型，不止一种入口</text>
+  <text x="55" y="102" class="sub">界面负责收发信息；模型负责计算。两者不要混为一谈。</text>
+
+  <rect x="55" y="155" width="235" height="125" rx="18" class="box"/>
+  <text x="172" y="205" text-anchor="middle" class="head">官方网页或 App</text>
+  <text x="172" y="242" text-anchor="middle" class="small">适合普通用户点击</text>
+
+  <rect x="330" y="155" width="235" height="125" rx="18" class="warn"/>
+  <text x="447" y="205" text-anchor="middle" class="head">第三方包装 App</text>
+  <text x="447" y="242" text-anchor="middle" class="small">可加入提示词与收费</text>
+
+  <rect x="605" y="155" width="235" height="125" rx="18" class="soft"/>
+  <text x="722" y="205" text-anchor="middle" class="head">终端 CLI</text>
+  <text x="722" y="242" text-anchor="middle" class="small">用文字命令直接操作</text>
+
+  <rect x="880" y="155" width="235" height="125" rx="18" class="box"/>
+  <text x="997" y="205" text-anchor="middle" class="head">程序 API</text>
+  <text x="997" y="242" text-anchor="middle" class="small">让其他软件自动调用</text>
+
+  <path d="M172 280V385H435" class="line"/>
+  <path d="M447 280V385H500" class="line"/>
+  <path d="M722 280V385H700" class="line"/>
+  <path d="M997 280V385H765" class="line"/>
+
+  <rect x="255" y="405" width="315" height="140" rx="20" class="soft"/>
+  <text x="412" y="465" text-anchor="middle" class="head">云端模型服务</text>
+  <text x="412" y="505" text-anchor="middle" class="small">数据经网络发往服务商</text>
+
+  <rect x="630" y="405" width="315" height="140" rx="20" class="warn"/>
+  <text x="787" y="465" text-anchor="middle" class="head">本机运行的模型</text>
+  <text x="787" y="505" text-anchor="middle" class="small">计算在自己的电脑进行</text>
+
+  <text x="600" y="620" text-anchor="middle" class="head">终端不是另一种模型，只是另一种操作界面</text>
+  <text x="600" y="660" text-anchor="middle" class="small">终端既可连接云端，也可运行本地模型；费用、隐私和权限仍要分别核对</text>
+</svg>

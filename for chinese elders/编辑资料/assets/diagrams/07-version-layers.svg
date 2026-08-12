@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="760" height="560" viewBox="0 0 760 560">
+  <rect width="760" height="560" rx="30" fill="#fbf7ef"/>
+  <text x="380" y="56" text-anchor="middle" font-family="PingFang SC, sans-serif" font-size="34" font-weight="700" fill="#172522">“版本”可能指六个不同层次</text>
+  <g font-family="PingFang SC, sans-serif" font-size="24" text-anchor="middle">
+    <rect x="80" y="92" width="600" height="58" rx="15" fill="#087f73"/><text x="380" y="130" fill="white">App 版本：界面和功能</text>
+    <rect x="105" y="158" width="550" height="58" rx="15" fill="#15958a"/><text x="380" y="196" fill="white">产品路由：免费层或会员层</text>
+    <rect x="130" y="224" width="500" height="58" rx="15" fill="#38aaa0"/><text x="380" y="262" fill="#172522">系统提示词：隐藏工作说明</text>
+    <rect x="155" y="290" width="450" height="58" rx="15" fill="#7bc9c1"/><text x="380" y="328" fill="#172522">搜索与知识库：当前资料</text>
+    <rect x="180" y="356" width="400" height="58" rx="15" fill="#b6e2dd"/><text x="380" y="394" fill="#172522">API 名称：别名或快照</text>
+    <rect x="205" y="422" width="350" height="58" rx="15" fill="#fff0d4"/><text x="380" y="460" fill="#172522">模型版本：基础能力</text>
+    <text x="380" y="525" font-size="21" fill="#5f706b">只报 App 版本，不能证明后台模型</text>
+  </g>
+</svg>

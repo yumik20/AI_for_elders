@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="760" height="650" viewBox="0 0 760 650">
+  <rect width="760" height="650" rx="30" fill="#fbf7ef"/>
+  <text x="380" y="55" text-anchor="middle" font-family="PingFang SC, sans-serif" font-size="34" font-weight="700" fill="#172522">一条信息的六步核验</text>
+  <g font-family="PingFang SC, sans-serif" font-size="25">
+    <g><circle cx="95" cy="120" r="36" fill="#087f73"/><text x="95" y="129" text-anchor="middle" fill="white">1</text><text x="150" y="129" fill="#172522">拆出可核验主张</text></g>
+    <g><circle cx="95" cy="205" r="36" fill="#087f73"/><text x="95" y="214" text-anchor="middle" fill="white">2</text><text x="150" y="214" fill="#172522">找日期、作者和最早出处</text></g>
+    <g><circle cx="95" cy="290" r="36" fill="#087f73"/><text x="95" y="299" text-anchor="middle" fill="white">3</text><text x="150" y="299" fill="#172522">离开页面，横向阅读</text></g>
+    <g><circle cx="95" cy="375" r="36" fill="#087f73"/><text x="95" y="384" text-anchor="middle" fill="white">4</text><text x="150" y="384" fill="#172522">找两个真正独立来源</text></g>
+    <g><circle cx="95" cy="460" r="36" fill="#087f73"/><text x="95" y="469" text-anchor="middle" fill="white">5</text><text x="150" y="469" fill="#172522">看原文是否支持结论</text></g>
+    <g><circle cx="95" cy="545" r="36" fill="#bd7c23"/><text x="95" y="554" text-anchor="middle" fill="white">6</text><text x="150" y="554" fill="#172522">按可能损失决定下一步</text></g>
+    <path d="M95 156V169M95 241V254M95 326V339M95 411V424M95 496V509" stroke="#9fd8d2" stroke-width="8"/>
+  </g>
+  <text x="380" y="615" text-anchor="middle" font-family="PingFang SC, sans-serif" font-size="22" fill="#5f706b">AI 可以协助整理，但不能替人宣布“已经核实”</text>
+</svg>

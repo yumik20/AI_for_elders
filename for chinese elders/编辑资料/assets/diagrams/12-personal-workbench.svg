@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="760" height="620" viewBox="0 0 760 620">
+  <rect width="760" height="620" rx="30" fill="#fbf7ef"/>
+  <text x="380" y="55" text-anchor="middle" font-family="PingFang SC, sans-serif" font-size="34" font-weight="700" fill="#172522">个人 AI 工作台</text>
+  <g font-family="PingFang SC, sans-serif" text-anchor="middle">
+    <circle cx="380" cy="310" r="105" fill="#087f73"/>
+    <text x="380" y="297" font-size="30" font-weight="700" fill="white">保持判断权</text>
+    <text x="380" y="337" font-size="23" fill="#dcefeb">能替换 · 能停止</text>
+    <g font-size="24" fill="#172522">
+      <rect x="55" y="92" width="215" height="74" rx="18" fill="#dcefeb"/><text x="162" y="138">少量官方工具</text>
+      <rect x="490" y="92" width="215" height="74" rx="18" fill="#fff0d4"/><text x="598" y="138">资料隐私分区</text>
+      <rect x="500" y="280" width="205" height="74" rx="18" fill="#dcefeb"/><text x="602" y="326">提示词模板</text>
+      <rect x="490" y="470" width="215" height="74" rx="18" fill="#fff0d4"/><text x="598" y="516">证据与版本记录</text>
+      <rect x="55" y="470" width="215" height="74" rx="18" fill="#dcefeb"/><text x="162" y="516">付费与退出规则</text>
+      <rect x="55" y="280" width="205" height="74" rx="18" fill="#fff0d4"/><text x="157" y="326">找真人停止线</text>
+    </g>
+    <g stroke="#087f73" stroke-width="5"><path d="M270 160L325 220"/><path d="M490 160L435 220"/><path d="M500 317H485"/><path d="M490 470L445 400"/><path d="M270 470L315 400"/><path d="M260 317H275"/></g>
+  </g>
+</svg>

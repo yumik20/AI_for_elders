@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="760" height="600" viewBox="0 0 760 600">
+  <rect width="760" height="600" rx="30" fill="#fbf7ef"/>
+  <text x="380" y="55" text-anchor="middle" font-family="PingFang SC, sans-serif" font-size="34" font-weight="700" fill="#172522">输入框后面的数据链</text>
+  <g font-family="PingFang SC, sans-serif" font-size="25" text-anchor="middle">
+    <rect x="235" y="90" width="290" height="66" rx="18" fill="#087f73"/><text x="380" y="132" fill="white">您的文字、照片或文件</text>
+    <path d="M380 156V190" stroke="#087f73" stroke-width="6" marker-end="url(#b)"/>
+    <rect x="235" y="196" width="290" height="66" rx="18" fill="#dcefeb"/><text x="380" y="238" fill="#172522">第三方 App 经营者</text>
+    <path d="M380 262V296" stroke="#087f73" stroke-width="6" marker-end="url(#b)"/>
+    <rect x="55" y="302" width="195" height="76" rx="18" fill="#fff0d4"/><text x="152" y="335" fill="#172522">日志与分析</text><text x="152" y="364" font-size="20" fill="#5f706b">可能的供应商</text>
+    <rect x="282" y="302" width="195" height="76" rx="18" fill="#dcefeb"/><text x="380" y="335" fill="#172522">模型 API</text><text x="380" y="364" font-size="20" fill="#5f706b">生成回答</text>
+    <rect x="510" y="302" width="195" height="76" rx="18" fill="#fff0d4"/><text x="608" y="335" fill="#172522">搜索与插件</text><text x="608" y="364" font-size="20" fill="#5f706b">更多第三方</text>
+    <path d="M380 378V430" stroke="#087f73" stroke-width="6" marker-end="url(#b)"/>
+    <rect x="125" y="438" width="510" height="88" rx="20" fill="#16302c"/><text x="380" y="477" fill="white">输入前先问：谁看见、保存多久、怎样删除</text><text x="380" y="508" font-size="20" fill="#b6e2dd">不透明时只给最少资料</text>
+  </g>
+  <defs><marker id="b" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0L10 5L0 10Z" fill="#087f73"/></marker></defs>
+</svg>
