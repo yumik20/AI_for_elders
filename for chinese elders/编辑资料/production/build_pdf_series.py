@@ -41,6 +41,8 @@ BOOK_ROOT = Path(__file__).resolve().parents[1]
 REPO_ROOT = Path(__file__).resolve().parents[3]
 OUTPUT_DIR = REPO_ROOT / "output/pdf"
 FONT_SCALE = 2.0
+AUTHOR_NAME = "爱吃的小柒"
+AUTHOR_DESCRIPTION = "哥伦比亚大学 AI 研究及硅谷 AI 创业者"
 
 PAGE_SIZE = (430, 760)
 PAGE_WIDTH, PAGE_HEIGHT = PAGE_SIZE
@@ -488,6 +490,23 @@ def make_styles() -> dict[str, ParagraphStyle]:
             textColor=MUTED,
             wordWrap="CJK",
         ),
+        "CoverAuthor": ParagraphStyle(
+            "CoverAuthor",
+            fontName="HeitiMedium",
+            fontSize=11.2,
+            leading=15,
+            textColor=INK,
+            spaceAfter=2,
+            wordWrap="CJK",
+        ),
+        "CoverAuthorDescription": ParagraphStyle(
+            "CoverAuthorDescription",
+            fontName="HeitiLight",
+            fontSize=9.5,
+            leading=14,
+            textColor=MUTED,
+            wordWrap="CJK",
+        ),
         "TocTitle": ParagraphStyle(
             "TocTitle",
             fontName="HeitiMedium",
@@ -569,7 +588,7 @@ class BookDocTemplate(BaseDocTemplate):
             topMargin=TOP,
             bottomMargin=BOTTOM,
             title=f"《看懂 AI》第{volume.number}册：{volume.title}",
-            author="《看懂 AI》书稿项目",
+            author=AUTHOR_NAME,
             subject=volume.subtitle,
         )
         self.volume = volume
@@ -930,6 +949,9 @@ def cover_story(volume: Volume) -> list[Flowable]:
         Paragraph(volume.subtitle, STYLES["CoverSubtitle"]),
         image,
         Spacer(1, 10),
+        Paragraph(f"作者：{AUTHOR_NAME}", STYLES["CoverAuthor"]),
+        Paragraph(AUTHOR_DESCRIPTION, STYLES["CoverAuthorDescription"]),
+        Spacer(1, 8),
         Paragraph("超大字版 · 2026-08-12", STYLES["CoverSeries"]),
         PageBreak(),
     ]

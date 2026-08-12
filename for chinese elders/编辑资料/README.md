@@ -4,7 +4,11 @@
 
 **当前版本：** 0.8  
 **启动日期：** 2026-08-12  
-**最终载体：** 手机大字版 PDF 系列；HTML 仅作编辑预览
+**作者：** 爱吃的小柒
+
+**作者简介：** 哥伦比亚大学 AI 研究及硅谷 AI 创业者
+
+**最终载体：** 六册手机超大字版 PDF 和一册手机标准字合订版；HTML 仅作编辑预览
 
 ## 这本书为谁而写
 
@@ -77,20 +81,24 @@
 
 当前已完成六册。每册纸面目录只列章名，可以直接点击跳转；更细的小节保留在 PDF 阅读器的书签侧栏中。正文页底部还有“返回目录”链接，每册末尾都有独立的“本册资料来源与核验说明”。
 
-1. [第一册：看懂 App、模型与训练](../../output/pdf/第一册-看懂App模型与训练-超大字版.pdf)
-2. [第二册：认识模型家族与定制方法](../../output/pdf/第二册-认识模型家族与定制方法-超大字版.pdf)
-3. [第三册：学会与 AI 对话和写作](../../output/pdf/第三册-学会与AI对话和写作-超大字版.pdf)
-4. [第四册：用 AI 作图、修照片与编程](../../output/pdf/第四册-用AI作图修照片与编程-超大字版.pdf)
-5. [第五册：选择 AI 产品与付费方式](../../output/pdf/第五册-选择AI产品与付费方式-超大字版.pdf)
-6. [第六册：辨别信息、保护隐私与建立个人制度](../../output/pdf/第六册-辨别信息保护隐私与个人制度-超大字版.pdf)
+1. [第一册：看懂 App、模型与训练](../第一册-看懂App模型与训练-超大字版.pdf)
+2. [第二册：认识模型家族与定制方法](../第二册-认识模型家族与定制方法-超大字版.pdf)
+3. [第三册：学会与 AI 对话和写作](../第三册-学会与AI对话和写作-超大字版.pdf)
+4. [第四册：用 AI 作图、修照片与编程](../第四册-用AI作图修照片与编程-超大字版.pdf)
+5. [第五册：选择 AI 产品与付费方式](../第五册-选择AI产品与付费方式-超大字版.pdf)
+6. [第六册：辨别信息、保护隐私与建立个人制度](../第六册-辨别信息保护隐私与个人制度-超大字版.pdf)
+
+## 手机标准字合订版
+
+[《看懂 AI》六册合订手机版（标准字版）](../看懂AI-六册合订手机版-标准字版.pdf)保留六册正文、词汇卡和各册资料来源，增加可点击的总目录、PDF 书签和每页返回总目录链接。页面仍为 430×760 的手机竖屏比例，正文约 15.6 pt，共 317 页。
 
 ## 生成本地 HTML
 
 HTML 是一个不依赖网络的单文件，包含当前目录、序言、已完成章节和动态产品参考页：
 
 ```bash
-python3 docs/ai-literacy-book/production/build_mobile_html.py
-open docs/ai-literacy-book/老年人AI读本-超大字版.html
+python3 'for chinese elders/编辑资料/production/build_mobile_html.py'
+open 'for chinese elders/编辑资料/老年人AI读本-超大字版.html'
 ```
 
 修改 Markdown 书稿后，重新运行第一条命令即可更新预览。
@@ -99,14 +107,21 @@ open docs/ai-literacy-book/老年人AI读本-超大字版.html
 
 ```bash
 uv run --with reportlab --with svglib --with pillow \
-  python docs/ai-literacy-book/production/build_pdf_series.py
+  python 'for chinese elders/编辑资料/production/build_pdf_series.py'
 
 # 只重建第三、第四册；第一册内容冻结时使用：
 uv run --with reportlab --with svglib --with pillow \
-  python docs/ai-literacy-book/production/build_pdf_series.py 3 4
+  python 'for chinese elders/编辑资料/production/build_pdf_series.py' 3 4
 
 uv run --with pypdf --with pdfplumber \
-  python docs/ai-literacy-book/production/verify_pdf_series.py
+  python 'for chinese elders/编辑资料/production/verify_pdf_series.py'
+
+# 生成手机标准字合订版：
+uv run --with reportlab --with svglib \
+  python 'for chinese elders/编辑资料/production/build_mobile_compendium.py'
+
+uv run --with pypdf --with pdfplumber \
+  python 'for chinese elders/编辑资料/production/verify_mobile_compendium.py'
 ```
 
 PDF 生成器会嵌入中文字体，并生成可点击目录、侧栏书签及页内返回目录链接。最终交付前还需用 Poppler 把全部页面渲染成图片，逐页检查遮挡、截断、空白页和图表清晰度。
